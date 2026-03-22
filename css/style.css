@@ -1,0 +1,216 @@
+/* Bee Nails and Lash Studio - Navy Blue Premium Theme */
+/* Full replacement for old pink/beige styles */
+
+:root {
+  --primary: #415a77;        /* Main soft navy accent */
+  --primary-dark: #0d1b2a;   /* Deep navy for headers, navbar, strong bg */
+  --primary-light: #778da9;  /* Muted blue-gray for hovers, borders */
+  --secondary: #e0e1dd;      /* Soft cream/off-white for sections/cards */
+  --light-bg: #f0f4f8;       /* Very light blue-gray body bg */
+  --text-dark: #0d1b2a;
+  --text-light: #e0e1dd;
+  --accent-gold: #d4a017;    /* Subtle bee gold for highlights (optional) */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+h5 {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-dark) !important;
+  box-shadow: 0 4px 15px rgba(13, 27, 42, 0.2);
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-light) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(65, 90, 119, 0.3);
+}
+
+.btn-light {
+  background-color: var(--secondary);
+  color: var(--primary-dark);
+}
+
+/* Cards - General & Featured */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(13, 27, 42, 0.12);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(13, 27, 42, 0.18);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-body {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+/* Pricelist Cards (kept similar structure but rethemed) */
+.pricelist-card {
+  background-color: var(--secondary);
+  border: 2px solid var(--primary-light);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.pricelist-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(13, 27, 42, 0.2);
+}
+
+.pricelist-card .card-title {
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.list-group-item {
+  background: transparent;
+  border: none;
+  padding: 0.75rem 0;
+  font-size: 1.05rem;
+}
+
+.list-group-item span:first-child {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.list-group-item span:last-child {
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+/* Horizontal Gallery (for image carousels if used) */
+.horizontal-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.horizontal-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-gallery img {
+  flex: 0 0 320px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(13, 27, 42, 0.15);
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+
+.horizontal-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Section Padding */
+.section-padding {
+  padding: 5rem 0;
+}
+
+/* Map (if you have Google Maps) */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Optional: Add subtle hover glow to links/buttons for premium feel */
+a:hover {
+  color: var(--primary-light) !important;
+  text-decoration: none;
+}
+
+.hero-section {
+  background-color: rgb (245, 245, 245); /* Clean white for max readability */
+  color: var(--text-dark); /* Deep navy text */
+  border-bottom: 1px solid var(--primary-light); /* Subtle separator */
+  box-shadow: 0 4px 15px rgba(13, 27, 42, 0.05); /* Light shadow for depth */
+}
+
+.hero-section h1 {
+  font-size: 4.5rem; /* Bigger for impact */
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section .lead {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+}
+
+.larger-card-img {
+  height: 400px;          /* Increased from ~220-240px to 320px for bigger viewport feel */
+  object-fit: cover;      /* Keeps aspect ratio, crops nicely */
+}
